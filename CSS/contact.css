@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* locations section */
+.locations {
+  background-image: url("../Images/dan-gold-E6HjQaB7UEA-unsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: #666666;
+}
+
+.locations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.5;
+}
+
+.locations > * {
+  position: relative;
+  z-index: 5;
+}
+
+.content {
+  width: 300px;
+  padding: 20px;
+  margin: 2rem auto;
+  background-color: #d4cbcb;
+  box-shadow: 2px 2px #6e5252;
+  border-radius: 10px;
+}
+
+.loc-title {
+  padding-top: 40px;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* jobs */
+.jobs > button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: tomato;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+.btn :hover {
+  background: orangered;
+  color: #000;
+}
+.social {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 8px;
+  color: #fff;
+}
