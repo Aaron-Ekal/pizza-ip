@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100%;
+  height: 100%;
+  background: #e9d6cd;
+  overflow: hidden;
+  cursor: url(../Images/cursor.png), auto;
+}
+img {
+  position: absolute;
+  bottom: 0;
+  top: 15%;
+  right: 0;
+  width: 50%;
+  animation: 1s animate ease-in-out;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 nav {
   position: relative;
   background: #1b1b1b;
@@ -44,4 +69,38 @@ nav .menu {
 .menu ul li a:hover {
   background: orangered;
   color: #000;
+}
+.content {
+  position: absolute;
+  padding: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.content h1 {
+  font-size: 60px;
+}
+hr {
+  margin-top: 30px;
+  width: 20%;
+  height: 6px;
+  background: #000;
+}
+.content p {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+button {
+  margin-top: 20px;
+  background: orangered;
+  border: none;
+  outline: none;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: white;
+}
+.content span {
+  color: orangered;
 }
