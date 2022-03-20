@@ -48,7 +48,7 @@ nav .menu {
   color: orangered;
   font-size: 48px;
   font-weight: 650;
-  margin-left: 12px;
+  margin-left: -4%;
 }
 .menu ul {
   display: inline-flex;
