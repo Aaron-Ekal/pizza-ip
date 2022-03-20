@@ -8,7 +8,7 @@ body {
   height: 100%;
   background: #e9d6cd;
   overflow: hidden;
-  cursor: url(../Images/cursor.png), auto;
+  cursor: pointer;
 }
 img {
   position: absolute;
@@ -30,7 +30,7 @@ img {
 }
 nav {
   position: relative;
-  background: #1b1b1b;
+  background: #312f2f;
   width: 100%;
   padding: 10px 0;
   z-index: 12;
@@ -48,7 +48,7 @@ nav .menu {
   color: orangered;
   font-size: 48px;
   font-weight: 650;
-  margin-left: -18px;
+  margin-left: 12px;
 }
 .menu ul {
   display: inline-flex;
@@ -81,13 +81,13 @@ nav .menu {
 }
 hr {
   margin-top: 30px;
-  width: 20%;
-  height: 6px;
+  width: 30%;
+  height: 16px;
   background: #000;
 }
 .content p {
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 500;
 }
 button {
@@ -98,7 +98,7 @@ button {
   letter-spacing: 0.04em;
   font-size: 20px;
   padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 29px;
   color: white;
 }
 .content span {
