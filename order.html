@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/order.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Pizza-Slice</title>
 </head>
@@ -20,11 +20,99 @@
             <ul>
                 <li> <a href="index.html">Home</a> </li>
                 <li> <a href="order.html">Order</a> </li>
-                <li> <a href="about.html">About Us</a> </li>
+                <li> <a href="about Us.html">About Us</a> </li>
                 <li> <a href="contact.html">Contact</a> </li>
             </ul>
         </div>
     </nav>
+    <a name="pizza-select"></a>
+    <a name="order"></a>
+    <div class="pizza-select">
+        <p>Prepare Your Order:</p>
+        <div class="cards-section row g-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 ">
+                <div class="card-header">
+                    <p>PIZZA</p>
+                </div>
+                <div class="card-content">
+                    <div class="bbq-steak">
+                        <input type="checkbox" name="toppings" id="bbq-steak" value="BBQ-Steak">
+                        <label for="bbq-steak">BBQ Steak</label>
+                    </div>
+                    <div class="peri-peri">
+                        <input type="checkbox" name="toppings" id="peri-peri" value="Peri-Peri">
+                        <label for="peri-peri">Chicken Peri Peri</label>
+                    </div>
+                    <div class="vegan">
+                        <input type="checkbox" name="toppings" id="vegan" value="Vegan">
+                        <label for="vegan">Vegan Classic</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <div class="card-header">
+                    <p>CRUST</p>
+                </div>
+                <div class="card-content">
+                    <div class="crispy">
+                        <input type="radio" name="crust" id="crispy" value="Crispy">
+                        <label for="crispy">Crispy Thin</label>
+                    </div>
+                    <div class="stuffed">
+                        <input type="radio" name="crust" id="stuffed" value="Stuffed">
+                        <label for="stuffed">Stuffed</label>
+                    </div>
+                    <div class="gluten-free">
+                        <input type="radio" name="crust" id="gluten-free" value="Gluten-Free">
+                        <label for="gluten-free">Gluten Free</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 col-lg-4">
+                <div class="card-header">
+                    <p>SIZE</p>
+                </div>
+                <div class="card-content">
+                    <div class="small">
+                        <input type="radio" name="sizes" id="small" value="Small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="medium">
+                        <input type="radio" name="sizes" id="medium" value="Medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="large">
+                        <input type="radio" name="sizes" id="large" value="Large">
+                        <label for="large">Large</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-show">
+            <button class="pizza-select cta" onclick="createPizzaItem()">PLACE ORDER</button>
+        </div>
+    </div>
+    <!-- order confirmation -->
+    <div class="order-confirm">
+        <div class="card">
+            <div class="card-header">
+                <p>YOUR ORDER</p>
+            </div>
+            <div class="card-content">
+                <div id="item-list">
+
+                </div>
+                <div id="total">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="confirm-ctas text-center">
+            <button class="confirm btn btn-danger" onclick="deliver()">DELIVER TO ME</button>
+            <button class="confirm btn btn-danger" onclick="pickUp()">I'LL PICK UP</button>
+        </div>
+    </div>
 
 
 
